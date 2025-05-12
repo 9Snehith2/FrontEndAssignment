@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upgrade Plan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>ClothesInventory</h2>
+    <nav>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="active"><a href="#"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+        <li><a href="#"><i class="fa-solid fa-box"></i> Inventory</a></li>
+        <li><a href="#"><i class="fa-solid fa-chart-column"></i> Reports</a></li>
+        <li><a href="#"><i class="fa-solid fa-circle-info"></i> About</a></li>
+      </ul>
+    </nav>
+    <footer>
+      <p>👤 Alex Morgan<br><span>Manager</span></p>
+    </footer>
+  </aside>
+
+  <main class="content">
+    <header class="page-header">
+      <h1>Upgrade Your Plan</h1>
+      <p><a href="#">Select a new plan to unlock more features and credits.</a></p>
+    </header>
+
+    <section class="pricing-plans">
+      <div class="plan-card" onclick="alert('Choose Basic')">
+        <h3>⭐ Basic</h3>
+        <p>$19/month</p>
+        <ul>
+          <li>1,000 Credits</li>
+          <li>1 User</li>
+          <li>Email Support</li>
+          <li>2 Integrations</li>
+        </ul>
+        <button>Choose Basic</button>
+      </div>
+
+      <div class="plan-card current">
+        <h3>🔑 Pro</h3>
+        <p>$49/month</p>
+        <ul>
+          <li>10,000 Credits</li>
+          <li>5 Users</li>
+          <li>Priority Support</li>
+          <li>10 Integrations</li>
+        </ul>
+        <button disabled>Current Plan</button>
+      </div>
+
+      <div class="plan-card" onclick="alert('Choose Unlimited')">
+        <h3>♾️ Unlimited</h3>
+        <p>$99/month</p>
+        <ul>
+          <li>Unlimited Credits</li>
+          <li>Unlimited Users</li>
+          <li>24/7 Support</li>
+          <li>All Integrations</li>
+        </ul>
+        <button>Choose Unlimited</button>
+      </div>
+    </section>
+
+    <section class="comparison">
+      <h2>Plan Comparison</h2>
+      <table>
+        <thead>
+          <tr><th>Plan</th><th>Credits</th><th>Users</th><th>Support</th><th>Integrations</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Basic</td><td>1,000</td><td>1</td><td>Email</td><td>2</td></tr>
+          <tr><td>Pro</td><td>10,000</td><td>5</td><td>Priority</td><td>10</td></tr>
+          <tr><td>Unlimited</td><td>Unlimited</td><td>Unlimited</td><td>24/7</td><td>All</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="support">
+      <p>Need Help? Contact Support<br><small>Chat or visit Help Center</small></p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

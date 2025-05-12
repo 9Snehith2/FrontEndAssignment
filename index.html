@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subscription Plan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>ClothesInventory</h2>
+    <nav>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="active"><a href="#"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+        <li><a href="#"><i class="fa-solid fa-box"></i> Inventory</a></li>
+        <li><a href="#"><i class="fa-solid fa-chart-column"></i> Reports</a></li>
+        <li><a href="#"><i class="fa-solid fa-circle-info"></i> About</a></li>
+      </ul>
+    </nav>
+    <footer>
+      <p>👤 Alex Morgan<br><span>Manager</span></p>
+    </footer>
+  </aside>
+
+  <main class="content">
+    <header class="page-header">
+      <h1>Your Subscription Plan</h1>
+      <button onclick="goToUpgradePage()" >Upgrade Plan</button>
+      <p class="status">Pro • Active</p>
+    </header>
+
+    <section class="subscription-summary">
+      <div class="card">
+        <div class="plan-header">
+          <h3><i data-lucide="award"></i> Pro Plan</h3>
+          <p>Start: Jan 1, 2024 • Renews: Feb 1, 2024</p>
+          <p class="price">$49/month</p>
+        </div>
+      </div>
+      <div class="features-used">
+        <h4>Features in Use</h4>
+        <ul>
+          <li>Unlimited Projects</li>
+          <li>5 Team Members</li>
+          <li>API Access</li>
+          <li>Priority Support</li>
+        </ul>
+      </div>
+    
+      <div class="stats">
+        <h4>Usage Stats</h4>
+        <p>API Calls: 8,200 / 10,000</p>
+        <p>Credits Remaining: 1,800</p>
+      </div>
+    </section>
+
+    <section class="pricing-plans">
+      <div class="plan-card" onclick="alert('Switch to Basic')">
+        <h3>⭐ Basic</h3>
+        <p>$19/month</p>
+        <ul>
+          <li>1,000 Credits</li>
+          <li>1 User</li>
+          <li>Email Support</li>
+          <li>2 Integrations</li>
+        </ul>
+      </div>
+
+      <div class="plan-card current">
+        <h3>🔑 Pro</h3>
+        <p>$49/month</p>
+        <ul>
+          <li>10,000 Credits</li>
+          <li>5 Users</li>
+          <li>Priority Support</li>
+          <li>10 Integrations</li>
+        </ul>
+      </div>
+
+      <div class="plan-card" onclick="alert('Switch to Unlimited')">
+        <h3>♾️ Unlimited</h3>
+        <p>$99/month</p>
+        <ul>
+          <li>Unlimited Credits</li>
+          <li>Unlimited Users</li>
+          <li>24/7 Support</li>
+          <li>All Integrations</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="subscription-actions">
+  <h3>Subscription Stop</h3>
+    <div class="blue-warning">
+      <div class="warning-caption">
+        <i data-lucide="alert-circle"></i>
+        <span>Stopping your subscription will remove all credits and access.</span>
+      </div>
+      <button class="stop-btn-outline">Stop Subscription</button>
+    </div>
+  </section>
+
+
+
+    <section class="preferences">
+      <h3>Subscription Preferences</h3>
+
+      <p>Payment Method </p>
+      <div class="card-box">
+        <h4>Card</h4>
+      </div>
+      <div class="buttons">
+        <button>Billing History</button>
+        <button<>Download Invoices</button>
+      </div>
+      <div class="auto-renew-box">
+        <label>
+          <input type="checkbox" />
+          Auto-Renew
+          <span class="subtext">Automatically renew subscription</span>
+        </label>
+      </div>
+    </section>
+
+    <footer class="support">
+      <p>Need Help? Contact Support<br><small>Chat or visit Help Center</small></p>
+    </footer>
+  </main>
+  <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
